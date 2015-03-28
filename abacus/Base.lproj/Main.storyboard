@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="abacus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cn-dI-AuM" userLabel="1" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="26" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pcF-so-Zpg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-5Z-1MA" userLabel="2" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="86" y="30" width="59.5" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZGw-aR-OBl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-2G-Vlj" userLabel="3" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="145.5" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S23-dm-cxA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eom-gQ-5em" userLabel="4" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="205.5" y="30" width="59.5" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Odp-iD-0AH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbD-C7-gGh" userLabel="5" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="265" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2ZU-ey-FqP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGm-xS-JM7" userLabel="6" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="325" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n5u-Fh-baA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzH-y2-JfI" userLabel="7" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="385" y="30" width="59.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zah-nv-kIX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klc-wO-aVl" userLabel="8" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="444.5" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lr9-u0-TDo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZn-cB-v0F" userLabel="9" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="504.5" y="30" width="59.5" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dno-mV-qPK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-GE-WX6" userLabel="10" customClass="NumberView" customModule="abacus" customModuleProvider="target">
+                                <rect key="frame" x="564" y="30" width="60" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="w5i-Gu-5Nv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28627450980392155" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ykq-5Z-1MA" firstAttribute="leading" secondItem="0Cn-dI-AuM" secondAttribute="trailing" id="1yl-MI-5i2" userLabel="1-space"/>
+                            <constraint firstItem="0Cn-dI-AuM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1" id="3FE-iX-lLO"/>
+                            <constraint firstItem="bZn-cB-v0F" firstAttribute="leading" secondItem="Klc-wO-aVl" secondAttribute="trailing" id="3Tw-qL-BVH" userLabel="8-space"/>
+                            <constraint firstItem="Klc-wO-aVl" firstAttribute="leading" secondItem="gzH-y2-JfI" secondAttribute="trailing" id="4De-Dn-ccD" userLabel="7-space"/>
+                            <constraint firstItem="Klc-wO-aVl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="584-S4-vdY"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="ykq-5Z-1MA" secondAttribute="width" id="5aJ-3E-1q4"/>
+                            <constraint firstItem="nn0-2G-Vlj" firstAttribute="leading" secondItem="ykq-5Z-1MA" secondAttribute="trailing" id="6UB-PT-IB2" userLabel="2-space"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="bZn-cB-v0F" secondAttribute="width" id="8Sd-HH-E7p"/>
+                            <constraint firstItem="VbD-C7-gGh" firstAttribute="leading" secondItem="eom-gQ-5em" secondAttribute="trailing" id="8TP-HO-tvi" userLabel="4-space"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="leading" secondItem="bZn-cB-v0F" secondAttribute="trailing" id="JNK-Jj-OMe" userLabel="9-space"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="Klc-wO-aVl" secondAttribute="width" id="K3a-NT-M68"/>
+                            <constraint firstItem="eom-gQ-5em" firstAttribute="leading" secondItem="nn0-2G-Vlj" secondAttribute="trailing" id="KPm-Av-3eC" userLabel="3-space"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="NGm-xS-JM7" secondAttribute="width" id="MAP-i2-tqj"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="0Cn-dI-AuM" secondAttribute="width" id="Qep-JG-sLR"/>
+                            <constraint firstItem="eom-gQ-5em" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="R5S-gz-C3o"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="gzH-y2-JfI" secondAttribute="width" id="S6n-N5-XCf"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="VbD-C7-gGh" secondAttribute="width" id="Vgy-8H-1Ji"/>
+                            <constraint firstItem="ykq-5Z-1MA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="XvB-Tt-0Nu"/>
+                            <constraint firstItem="0Cn-dI-AuM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="aBe-nu-EDY"/>
+                            <constraint firstItem="bZn-cB-v0F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="d3g-m7-W59"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="nn0-2G-Vlj" secondAttribute="width" id="dGC-xW-wSF"/>
+                            <constraint firstItem="NGm-xS-JM7" firstAttribute="leading" secondItem="VbD-C7-gGh" secondAttribute="trailing" id="eaT-DV-bU8" userLabel="5-space"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="eom-gQ-5em" secondAttribute="width" id="hGT-Kh-3fc"/>
+                            <constraint firstItem="gzH-y2-JfI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="i6G-IV-fY2"/>
+                            <constraint firstItem="xSy-GE-WX6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="iib-BU-29q"/>
+                            <constraint firstItem="VbD-C7-gGh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="m3X-G6-4jX"/>
+                            <constraint firstItem="nn0-2G-Vlj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="o7U-4z-3jr"/>
+                            <constraint firstItem="0Cn-dI-AuM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="s5y-Gz-wug" userLabel="0-space"/>
+                            <constraint firstItem="NGm-xS-JM7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="w7L-mB-nUL"/>
+                            <constraint firstItem="gzH-y2-JfI" firstAttribute="leading" secondItem="NGm-xS-JM7" secondAttribute="trailing" id="wrZ-jt-ynB" userLabel="6-space"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dlp-Un-fP0" appends="YES" id="LQ1-XC-0tW"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="eight" destination="Klc-wO-aVl" id="fow-0s-n6M"/>
+                        <outlet property="eightSpace" destination="3Tw-qL-BVH" id="yMz-pX-dAo"/>
+                        <outlet property="five" destination="VbD-C7-gGh" id="fVR-NQ-fj9"/>
+                        <outlet property="fiveSpace" destination="eaT-DV-bU8" id="PMj-KR-f8R"/>
+                        <outlet property="four" destination="eom-gQ-5em" id="YVi-Ia-TTg"/>
+                        <outlet property="fourSpace" destination="8TP-HO-tvi" id="3lh-Fv-66d"/>
+                        <outlet property="nine" destination="bZn-cB-v0F" id="kFm-oo-Fhx"/>
+                        <outlet property="nineSpace" destination="JNK-Jj-OMe" id="KOM-ST-RlW"/>
+                        <outlet property="one" destination="0Cn-dI-AuM" id="Rwg-6s-B82"/>
+                        <outlet property="oneSpace" destination="1yl-MI-5i2" id="TRo-Nc-wwc"/>
+                        <outlet property="seven" destination="gzH-y2-JfI" id="2E0-vl-n2u"/>
+                        <outlet property="sevenSpace" destination="4De-Dn-ccD" id="0cm-DO-n3Y"/>
+                        <outlet property="six" destination="NGm-xS-JM7" id="Y5e-N6-Qdq"/>
+                        <outlet property="sixSpace" destination="wrZ-jt-ynB" id="LTj-ER-A0D"/>
+                        <outlet property="ten" destination="xSy-GE-WX6" id="pDC-zd-us1"/>
+                        <outlet property="three" destination="nn0-2G-Vlj" id="3lc-LJ-80c"/>
+                        <outlet property="threeSpace" destination="KPm-Av-3eC" id="Q3e-fM-sEg"/>
+                        <outlet property="two" destination="ykq-5Z-1MA" id="rrj-qD-PwA"/>
+                        <outlet property="twoSpace" destination="6UB-PT-IB2" id="dCD-1U-hVk"/>
+                        <outlet property="zeroSpace" destination="s5y-Gz-wug" id="8jT-Dx-w6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dlp-Un-fP0">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="LWs-BD-pk1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="211" y="429"/>
+        </scene>
+    </scenes>
+</document>
