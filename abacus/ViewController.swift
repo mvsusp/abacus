@@ -63,7 +63,7 @@ class ViewController: UIViewController {
       } else {
         hideNumber(index)
       }
-      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
+//      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
     }
     
     currentNumber = value
@@ -83,10 +83,8 @@ class ViewController: UIViewController {
         }, completion: {
           (success)in
           UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
-            NSLog("move complete")
-            self.numbers[value-1].borderWidth = 0
+            self.spaces[value-1].constant = self.spaces[value-1].constant - 20
             self.view.layoutSubviews()
-            NSLog("setting border for: \(value)")
           }, completion: nil)
           
       })
@@ -98,8 +96,19 @@ class ViewController: UIViewController {
       return
     }
     if spaces[value-1].constant < self.view.bounds.width {
-      spaces[value-1].constant = spaces[value-1].constant + self.view.bounds.width
-      animateLayout()
+      UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
+        self.spaces[value-1].constant = self.spaces[value-1].constant + 20
+        self.view.layoutSubviews()
+        }, completion: {
+          (success)in
+          UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
+            NSLog("--move complete")
+            self.spaces[value-1].constant = self.spaces[value-1].constant + self.view.bounds.width
+            self.view.layoutSubviews()
+            NSLog("--setting border for: \(value)")
+            }, completion: nil)
+          
+      })
     }
   }
   
