@@ -42,6 +42,7 @@ class ViewController: UIViewController {
   }
   
   func setCurrentNumber(value: Int){
+    var animations: [()->()] = []
     
     for index in 1...10 {
       if index <= value {
@@ -52,8 +53,10 @@ class ViewController: UIViewController {
     }
     
     currentNumber = value
-
-    UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 1, options: nil, animations: {
+  }
+  
+  func animateLayout(){
+    UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
       self.view.layoutSubviews()
       }, completion: nil)
   }
@@ -61,6 +64,7 @@ class ViewController: UIViewController {
   func showNumber(value: Int){
     if spaces[value-1].constant >= self.view.bounds.width {
       spaces[value-1].constant = spaces[value-1].constant - self.view.bounds.width
+      animateLayout()
     }
   }
   
@@ -70,6 +74,7 @@ class ViewController: UIViewController {
     }
     if spaces[value-1].constant <= self.view.bounds.width {
       spaces[value-1].constant = spaces[value-1].constant + self.view.bounds.width
+      animateLayout()
     }
   }
   
