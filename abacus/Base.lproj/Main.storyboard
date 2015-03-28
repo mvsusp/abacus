@@ -31,6 +31,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykq-5Z-1MA" userLabel="2" customClass="NumberView" customModule="abacus" customModuleProvider="target">
@@ -46,10 +49,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-2G-Vlj" userLabel="3" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="145.5" y="30" width="60" height="50"/>
+                                <rect key="frame" x="145" y="30" width="60" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="S23-dm-cxA"/>
@@ -61,10 +67,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eom-gQ-5em" userLabel="4" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="205.5" y="30" width="59.5" height="50"/>
+                                <rect key="frame" x="205" y="30" width="59.5" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Odp-iD-0AH"/>
@@ -75,6 +84,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -91,6 +103,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGm-xS-JM7" userLabel="6" customClass="NumberView" customModule="abacus" customModuleProvider="target">
@@ -105,6 +120,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -121,10 +139,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klc-wO-aVl" userLabel="8" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="444.5" y="30" width="60" height="50"/>
+                                <rect key="frame" x="444" y="30" width="60" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Lr9-u0-TDo"/>
@@ -136,10 +157,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZn-cB-v0F" userLabel="9" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="504.5" y="30" width="59.5" height="50"/>
+                                <rect key="frame" x="504" y="30" width="59.5" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dno-mV-qPK"/>
@@ -150,6 +174,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -166,8 +193,17 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.98431372549019602" green="0.18431372549019609" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKq-ud-bhX" userLabel="Index">
+                                <rect key="frame" x="256.5" y="205" width="87.5" height="191"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="160"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.28627450980392155" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -181,6 +217,7 @@
                             <constraint firstItem="nn0-2G-Vlj" firstAttribute="leading" secondItem="ykq-5Z-1MA" secondAttribute="trailing" id="6UB-PT-IB2" userLabel="2-space"/>
                             <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="bZn-cB-v0F" secondAttribute="width" id="8Sd-HH-E7p"/>
                             <constraint firstItem="VbD-C7-gGh" firstAttribute="leading" secondItem="eom-gQ-5em" secondAttribute="trailing" id="8TP-HO-tvi" userLabel="4-space"/>
+                            <constraint firstAttribute="centerX" secondItem="WKq-ud-bhX" secondAttribute="centerX" id="GnW-0Q-UeF"/>
                             <constraint firstItem="xSy-GE-WX6" firstAttribute="leading" secondItem="bZn-cB-v0F" secondAttribute="trailing" id="JNK-Jj-OMe" userLabel="9-space"/>
                             <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="Klc-wO-aVl" secondAttribute="width" id="K3a-NT-M68"/>
                             <constraint firstItem="eom-gQ-5em" firstAttribute="leading" secondItem="nn0-2G-Vlj" secondAttribute="trailing" id="KPm-Av-3eC" userLabel="3-space"/>
@@ -197,6 +234,7 @@
                             <constraint firstItem="xSy-GE-WX6" firstAttribute="width" secondItem="eom-gQ-5em" secondAttribute="width" id="hGT-Kh-3fc"/>
                             <constraint firstItem="gzH-y2-JfI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="i6G-IV-fY2"/>
                             <constraint firstItem="xSy-GE-WX6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="iib-BU-29q"/>
+                            <constraint firstAttribute="centerY" secondItem="WKq-ud-bhX" secondAttribute="centerY" id="k3C-qx-Vcp"/>
                             <constraint firstItem="VbD-C7-gGh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="m3X-G6-4jX"/>
                             <constraint firstItem="nn0-2G-Vlj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="o7U-4z-3jr"/>
                             <constraint firstItem="0Cn-dI-AuM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="s5y-Gz-wug" userLabel="0-space"/>
@@ -208,6 +246,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="currentNumberLabel" destination="WKq-ud-bhX" id="oRD-xk-973"/>
                         <outlet property="eight" destination="Klc-wO-aVl" id="fow-0s-n6M"/>
                         <outlet property="eightSpace" destination="3Tw-qL-BVH" id="yMz-pX-dAo"/>
                         <outlet property="five" destination="VbD-C7-gGh" id="fVR-NQ-fj9"/>

@@ -21,6 +21,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var nine: NumberView!
   @IBOutlet weak var ten: NumberView!
   
+  @IBOutlet weak var currentNumberLabel: UILabel!
   
   @IBOutlet weak var zeroSpace: NSLayoutConstraint!
   @IBOutlet weak var oneSpace: NSLayoutConstraint!
@@ -34,14 +35,26 @@ class ViewController: UIViewController {
   @IBOutlet weak var nineSpace: NSLayoutConstraint!
   
   var spaces: [NSLayoutConstraint] = []
+  var numbers: [NumberView] = []
   var currentNumber = 0
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    spaces = [zeroSpace, oneSpace,twoSpace,threeSpace,fourSpace,fiveSpace,sixSpace,sevenSpace,eightSpace,nineSpace]
+    numbers = [one,two,three,four,five,six,seven,eight,nine,ten]
+    
+    setCurrentNumber(1)
+  }
   
   @IBAction func viewTapped(sender: UITapGestureRecognizer) {
     setCurrentNumber(++currentNumber%10)
-
+    
   }
   
   func setCurrentNumber(value: Int){
+    currentNumberLabel.text = "\(value)"
     var animations: [()->()] = []
     
     for index in 1...10 {
@@ -50,6 +63,7 @@ class ViewController: UIViewController {
       } else {
         hideNumber(index)
       }
+      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
     }
     
     currentNumber = value
@@ -64,7 +78,18 @@ class ViewController: UIViewController {
   func showNumber(value: Int){
     if spaces[value-1].constant >= self.view.bounds.width {
       spaces[value-1].constant = spaces[value-1].constant - self.view.bounds.width
-      animateLayout()
+      UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
+        self.view.layoutSubviews()
+        }, completion: {
+          (success)in
+          UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
+            NSLog("move complete")
+            self.numbers[value-1].borderWidth = 0
+            self.view.layoutSubviews()
+            NSLog("setting border for: \(value)")
+          }, completion: nil)
+          
+      })
     }
   }
   
@@ -72,23 +97,14 @@ class ViewController: UIViewController {
     if value > 9 {
       return
     }
-    if spaces[value-1].constant <= self.view.bounds.width {
+    if spaces[value-1].constant < self.view.bounds.width {
       spaces[value-1].constant = spaces[value-1].constant + self.view.bounds.width
       animateLayout()
     }
   }
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    spaces = [zeroSpace, oneSpace,twoSpace,threeSpace,fourSpace,fiveSpace,sixSpace,sevenSpace,eightSpace,nineSpace]
-
-    setCurrentNumber(1)
-  }
-  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   
