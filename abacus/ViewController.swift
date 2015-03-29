@@ -45,13 +45,22 @@ class ViewController: UIViewController {
     spaces = [zeroSpace, oneSpace,twoSpace,threeSpace,fourSpace,fiveSpace,sixSpace,sevenSpace,eightSpace,nineSpace]
     numbers = [one,two,three,four,five,six,seven,eight,nine,ten]
     
-    setCurrentNumber(1)
+    eraseBoard()
   }
   
   @IBAction func viewTapped(sender: UITapGestureRecognizer) {
     setCurrentNumber(++currentNumber%10)
     
   }
+  
+  @IBAction func rightSwiped(sender: UISwipeGestureRecognizer) {
+    setCurrentNumber(--currentNumber%10)
+  }
+  
+  @IBAction func leftSwiped(sender: UISwipeGestureRecognizer) {
+    setCurrentNumber(++currentNumber%10)
+  }
+  
   
   func setCurrentNumber(value: Int){
     currentNumberLabel.text = "\(value)"
@@ -63,10 +72,16 @@ class ViewController: UIViewController {
       } else {
         hideNumber(index)
       }
-//      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
+      //      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
     }
     
     currentNumber = value
+  }
+  
+  func eraseBoard(){
+    for index in 1...10 {
+      hideNumber(index, animate: false)
+    }
   }
   
   func animateLayout(){
@@ -78,34 +93,38 @@ class ViewController: UIViewController {
   func showNumber(value: Int){
     if spaces[value-1].constant >= self.view.bounds.width {
       spaces[value-1].constant = spaces[value-1].constant - self.view.bounds.width
+      if value == 1 {
+        spaces[value-1].constant = spaces[value-1].constant - 20
+      }
       UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
         self.view.layoutSubviews()
         }, completion: {
           (success)in
-          UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
-            self.spaces[value-1].constant = self.spaces[value-1].constant - 20
-            self.view.layoutSubviews()
-          }, completion: nil)
-          
+          if value != 1 {
+            UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
+              self.spaces[value-1].constant = self.spaces[value-1].constant - 20
+              self.view.layoutSubviews()
+              }, completion: nil)
+          }
       })
     }
   }
   
-  func hideNumber(value: Int){
+  func hideNumber(value: Int, animate: Bool = true){
     if value > 9 {
       return
     }
     if spaces[value-1].constant < self.view.bounds.width {
-      UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
+      let duration = animate ? 1.0 : 0
+      
+      UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
         self.spaces[value-1].constant = self.spaces[value-1].constant + 20
         self.view.layoutSubviews()
         }, completion: {
           (success)in
-          UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
-            NSLog("--move complete")
+          UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
             self.spaces[value-1].constant = self.spaces[value-1].constant + self.view.bounds.width
             self.view.layoutSubviews()
-            NSLog("--setting border for: \(value)")
             }, completion: nil)
           
       })

@@ -14,6 +14,8 @@
 		81F6E35D1AC7067D0075F0D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F6E35B1AC7067D0075F0D1 /* LaunchScreen.xib */; };
 		81F6E3691AC7067D0075F0D1 /* abacusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3681AC7067D0075F0D1 /* abacusTests.swift */; };
 		81F6E3731AC70EF20075F0D1 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3721AC70EF20075F0D1 /* NumberView.swift */; };
+		81F6E3751AC757AC0075F0D1 /* NumberRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */; };
+		81F6E3791AC778500075F0D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3781AC778500075F0D1 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		81F6E3671AC7067D0075F0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F6E3681AC7067D0075F0D1 /* abacusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abacusTests.swift; sourceTree = "<group>"; };
 		81F6E3721AC70EF20075F0D1 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRowView.swift; sourceTree = "<group>"; };
+		81F6E3781AC778500075F0D1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				81F6E35B1AC7067D0075F0D1 /* LaunchScreen.xib */,
 				81F6E3501AC7067D0075F0D1 /* Supporting Files */,
 				81F6E3721AC70EF20075F0D1 /* NumberView.swift */,
+				81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */,
+				81F6E3781AC778500075F0D1 /* MainViewController.swift */,
 			);
 			path = abacus;
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 			files = (
 				81F6E3551AC7067D0075F0D1 /* ViewController.swift in Sources */,
 				81F6E3531AC7067D0075F0D1 /* AppDelegate.swift in Sources */,
+				81F6E3751AC757AC0075F0D1 /* NumberRowView.swift in Sources */,
 				81F6E3731AC70EF20075F0D1 /* NumberView.swift in Sources */,
+				81F6E3791AC778500075F0D1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +422,7 @@
 				81F6E36E1AC7067D0075F0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F6E36F1AC7067D0075F0D1 /* Build configuration list for PBXNativeTarget "abacusTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				81F6E3711AC7067D0075F0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
