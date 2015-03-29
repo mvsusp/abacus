@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  abacus
-//
-//  Created by marcio vinicius dos santos on 28/03/15.
-//  Copyright (c) 2015 marcio vinicius dos santos. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -38,6 +30,9 @@ class ViewController: UIViewController {
   var numbers: [NumberView] = []
   var currentNumber = 0
   
+  required init(coder: NSCoder) {
+    super.init(coder: coder)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -2,7 +2,9 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  @IBOutlet weak var secondDigit: UIView!
+  var digits: [ViewController?] = [nil,nil,nil,nil,nil,nil,nil]
+  
+  @IBOutlet weak var inputField: UITextField!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -12,7 +14,22 @@ class MainViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
-  override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let controller = segue.destinationViewController as ViewController
+    let index = segue.identifier!.toInt()!
+    digits[index] = controller
+  }
+  
+  
+  @IBAction func setValue(sender: UIButton) {
+    var value = Int(NSString(string: inputField.text!).doubleValue * 100)
+    let count = digits.count
+    var mod = 10
+    for i in 0..<count {
+      let digit = value % mod
+      digits[i]?.setCurrentNumber(digit)
+      value = value / 10
+    }
     
   }
   
