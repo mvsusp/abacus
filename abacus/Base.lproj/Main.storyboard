@@ -121,16 +121,12 @@
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-oP-P4I" userLabel="Calc View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="580" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-hq-Hxq">
-                                        <rect key="frame" x="10" y="0.0" width="580" height="130"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="dsq-wx-IE2"/>
-                                        </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="80"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-Fa-YC2" userLabel="inputField">
+                                        <rect key="frame" x="10" y="10" width="580" height="95.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="80"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8B-tW-01e">
                                         <rect key="frame" x="0.0" y="103" width="600" height="450"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vrt-R6-evF">
@@ -175,9 +171,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="9pD-hq-Hxq" firstAttribute="leading" secondItem="IhC-oP-P4I" secondAttribute="leading" constant="10" id="38q-xL-ANl"/>
-                                    <constraint firstAttribute="trailing" secondItem="9pD-hq-Hxq" secondAttribute="trailing" constant="10" id="4OS-JX-hOG"/>
-                                    <constraint firstItem="9pD-hq-Hxq" firstAttribute="top" secondItem="IhC-oP-P4I" secondAttribute="top" id="x4R-BY-gyy"/>
+                                    <constraint firstItem="MR2-Fa-YC2" firstAttribute="top" secondItem="IhC-oP-P4I" secondAttribute="top" constant="10" id="YdC-3Z-LMc"/>
+                                    <constraint firstAttribute="trailing" secondItem="MR2-Fa-YC2" secondAttribute="trailing" constant="10" id="baY-kJ-KBV"/>
+                                    <constraint firstItem="MR2-Fa-YC2" firstAttribute="leading" secondItem="IhC-oP-P4I" secondAttribute="leading" constant="10" id="jY8-Hw-WFg"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -216,7 +212,7 @@
                     </view>
                     <connections>
                         <outlet property="calcViewTopSpace" destination="NNj-M3-AhN" id="Vx1-sq-cQo"/>
-                        <outlet property="inputField" destination="9pD-hq-Hxq" id="W8J-Qe-xPp"/>
+                        <outlet property="inputField" destination="MR2-Fa-YC2" id="zZg-57-aYG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -527,7 +523,7 @@
                         <action selector="leftSwiped:" destination="uwj-GM-Xia" id="Bv8-Nm-9kF"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <tapGestureRecognizer id="EW4-ou-HAo">
+                <tapGestureRecognizer id="EW4-ou-HAo" userLabel="viewTapped">
                     <connections>
                         <action selector="viewTapped:" destination="uwj-GM-Xia" id="Bx5-iG-KON"/>
                     </connections>

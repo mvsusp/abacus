@@ -25,6 +25,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var sevenSpace: NSLayoutConstraint!
   @IBOutlet weak var eightSpace: NSLayoutConstraint!
   @IBOutlet weak var nineSpace: NSLayoutConstraint!
+
+  var delegate: MainViewController?
   
   var spaces: [NSLayoutConstraint] = []
   var numbers: [NumberView] = []
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
   
   
   func setCurrentNumber(value: Int){
+    delegate?.numberChanged()
     currentNumberLabel.text = "\(value)"
     var animations: [()->()] = []
     

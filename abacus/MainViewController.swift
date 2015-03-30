@@ -4,7 +4,8 @@ class MainViewController: UIViewController {
   
   var digits: [ViewController?] = [nil,nil,nil,nil,nil,nil,nil]
   
-  @IBOutlet weak var inputField: UITextField!
+
+  @IBOutlet weak var inputField: UILabel!
   
   @IBOutlet weak var calcViewTopSpace: NSLayoutConstraint!
   
@@ -24,8 +25,21 @@ class MainViewController: UIViewController {
     let controller = segue.destinationViewController as ViewController
     let index = segue.identifier!.toInt()!
     digits[index] = controller
+    controller.delegate = self
   }
   
+  func numberChanged(){
+    let count = digits.count
+    
+    var mod = 1
+    var text: Double = 0
+    for i in 1...count {
+      text += Double(mod) * Double(digits[i-1]!.currentNumber%10)
+      mod *= 10
+    }
+    let result = text / 100
+    inputField.text = "\(result)"
+  }
   
   @IBAction func setValue(sender: UIButton) {
     var value = Int(NSString(string: inputField.text!).doubleValue * 100)
