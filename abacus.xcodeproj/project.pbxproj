@@ -17,6 +17,7 @@
 		81F6E3731AC70EF20075F0D1 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3721AC70EF20075F0D1 /* NumberView.swift */; };
 		81F6E3751AC757AC0075F0D1 /* NumberRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */; };
 		81F6E3791AC778500075F0D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3781AC778500075F0D1 /* MainViewController.swift */; };
+		81F976C91AC8B1DD008EB7C7 /* background-blue-colorful-colors-Favim.com-2182984.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81F976C81AC8B1DD008EB7C7 /* background-blue-colorful-colors-Favim.com-2182984.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		81F6E3721AC70EF20075F0D1 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRowView.swift; sourceTree = "<group>"; };
 		81F6E3781AC778500075F0D1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		81F976C81AC8B1DD008EB7C7 /* background-blue-colorful-colors-Favim.com-2182984.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-blue-colorful-colors-Favim.com-2182984.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		81F6E34F1AC7067D0075F0D1 /* abacus */ = {
 			isa = PBXGroup;
 			children = (
+				81F976C81AC8B1DD008EB7C7 /* background-blue-colorful-colors-Favim.com-2182984.jpg */,
 				81F6E3521AC7067D0075F0D1 /* AppDelegate.swift */,
 				81F6E3541AC7067D0075F0D1 /* ViewController.swift */,
 				81F6E3561AC7067D0075F0D1 /* Main.storyboard */,
@@ -208,6 +211,7 @@
 				81F6E3581AC7067D0075F0D1 /* Main.storyboard in Resources */,
 				81F6E35D1AC7067D0075F0D1 /* LaunchScreen.xib in Resources */,
 				81F6E35A1AC7067D0075F0D1 /* Images.xcassets in Resources */,
+				81F976C91AC8B1DD008EB7C7 /* background-blue-colorful-colors-Favim.com-2182984.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

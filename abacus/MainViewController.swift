@@ -6,8 +6,14 @@ class MainViewController: UIViewController {
   
   @IBOutlet weak var inputField: UITextField!
   
+  @IBOutlet weak var calcViewTopSpace: NSLayoutConstraint!
+  
+  var openCalcViewSpaceValue: Int?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    inputField.text = "0"
+    calcViewTopSpace.constant = calcViewTopSpace.constant + self.view.bounds.height - inputField.bounds.height
   }
   
   override func didReceiveMemoryWarning() {
