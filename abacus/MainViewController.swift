@@ -9,6 +9,23 @@ class MainViewController: UIViewController {
   
   @IBOutlet weak var calcViewTopSpace: NSLayoutConstraint!
   
+  var isLidClose = true
+  
+  @IBAction func digitsTapped(sender: UITapGestureRecognizer) {
+    if isLidClose {
+      UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 2, options: nil, animations: {
+        self.calcViewTopSpace.constant = self.calcViewTopSpace.constant - self.view.bounds.height + self.inputField.bounds.height
+        self.view.layoutSubviews()
+        }, completion: nil)
+    } else {
+      UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 2, options: nil, animations: {
+        self.calcViewTopSpace.constant = self.calcViewTopSpace.constant + self.view.bounds.height - self.inputField.bounds.height
+        self.view.layoutSubviews()
+        }, completion: nil)
+    }
+    isLidClose = !isLidClose
+  }
+  
   var openCalcViewSpaceValue: Int?
   
   override func viewDidLoad() {
