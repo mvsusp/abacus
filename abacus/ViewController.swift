@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     var delegate: MainViewController?
     
     var spaces: [NSLayoutConstraint] = []
+    var originalSpacing: [CGFloat] = []
+    var hiddenSpacing: [CGFloat] = []
     var numbers: [NumberView] = []
     var currentNumber = 0
     
@@ -42,7 +44,9 @@ class ViewController: UIViewController {
         spaces = [zeroSpace, oneSpace,twoSpace,threeSpace,fourSpace,fiveSpace,sixSpace,sevenSpace,eightSpace,nineSpace]
         numbers = [one,two,three,four,five,six,seven,eight,nine,ten]
         
-        eraseBoard()
+        originalSpacing = map(spaces, {(space:NSLayoutConstraint) in return space.constant})
+        hiddenSpacing = map(spaces, {(space:NSLayoutConstraint) in return space.constant + self.view.bounds.width})
+        //        eraseBoard()
     }
     
     @IBAction func viewTapped(sender: UITapGestureRecognizer) {
@@ -64,7 +68,6 @@ class ViewController: UIViewController {
             delegate?.numberChanged()
         }
         currentNumberLabel.text = "\(value)"
-        var animations: [()->()] = []
         
         for index in 1...10 {
             if index <= value {
@@ -72,7 +75,6 @@ class ViewController: UIViewController {
             } else {
                 hideNumber(index)
             }
-            //      NSLog("space:\(index-1) width:\(self.spaces[index-1].constant)")
         }
         
         currentNumber = value
@@ -91,23 +93,21 @@ class ViewController: UIViewController {
     }
     
     func showNumber(value: Int){
-        if spaces[value-1].constant >= self.view.bounds.width {
-            spaces[value-1].constant = spaces[value-1].constant - self.view.bounds.width
-            if value == 1 {
-                spaces[value-1].constant = spaces[value-1].constant - 20
-            }
-            UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
-                self.view.layoutSubviews()
-                }, completion: {
-                    (success)in
-                    if value != 1 {
-                        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
-                            self.spaces[value-1].constant = self.spaces[value-1].constant - 20
-                            self.view.layoutSubviews()
-                            }, completion: nil)
-                    }
-            })
+        spaces[value-1].constant = self.originalSpacing[value-1] + 20
+        if value == 1 {
+            spaces[value-1].constant = self.originalSpacing[value-1]
         }
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
+            self.view.layoutSubviews()
+            }, completion: {
+                (success)in
+                if value != 1 {
+                    UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
+                        self.spaces[value-1].constant = self.originalSpacing[value-1]
+                        self.view.layoutSubviews()
+                        }, completion: nil)
+                }
+        })
     }
     
     func hideNumber(value: Int, animate: Bool = true){
@@ -118,12 +118,12 @@ class ViewController: UIViewController {
             let duration = animate ? 1.0 : 0
             
             UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 1, options: nil, animations: {
-                self.spaces[value-1].constant = self.spaces[value-1].constant + 20
+                self.spaces[value-1].constant = self.originalSpacing[value-1] + 20
                 self.view.layoutSubviews()
                 }, completion: {
                     (success)in
                     UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil , animations: {
-                        self.spaces[value-1].constant = self.spaces[value-1].constant + self.view.bounds.width
+                        self.spaces[value-1].constant = self.hiddenSpacing[value-1]
                         self.view.layoutSubviews()
                         }, completion: nil)
                     

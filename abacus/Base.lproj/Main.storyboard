@@ -185,8 +185,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="cND-cw-bTY" secondAttribute="height" multiplier="1:1" id="kQE-lT-vbF"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                    <state key="normal" title="%">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="Abacus">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <variation key="default">
@@ -195,7 +195,7 @@
                                                         </mask>
                                                     </variation>
                                                     <connections>
-                                                        <action selector="percentTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rn-fV-eL1"/>
+                                                        <action selector="abacusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFK-8e-nRo"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B2-kb-MPH">
@@ -664,7 +664,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-lN-egY" userLabel="3" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="66" y="10" width="30" height="50"/>
+                                <rect key="frame" x="88" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="BMn-k8-gMO"/>
@@ -683,7 +683,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1i-gg-0JJ" userLabel="5" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="106" y="10" width="30" height="50"/>
+                                <rect key="frame" x="150" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Gs9-cb-uoK"/>
@@ -702,7 +702,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7n-XW-SMY" userLabel="8" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="166" y="10" width="30" height="50"/>
+                                <rect key="frame" x="243" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BMy-sc-rgb"/>
@@ -721,7 +721,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmW-Hb-SVE" userLabel="2" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="46" y="10" width="30" height="50"/>
+                                <rect key="frame" x="57" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FcH-iE-Pa4"/>
@@ -740,7 +740,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogx-H0-8ps" userLabel="6" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="126" y="10" width="30" height="50"/>
+                                <rect key="frame" x="181" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="DtL-Xg-uHx"/>
@@ -759,7 +759,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwv-Tn-eek" userLabel="9" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="186" y="10" width="30" height="50"/>
+                                <rect key="frame" x="274" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="J7f-7o-NQ3"/>
@@ -778,7 +778,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-3e-x1b" userLabel="10" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="206" y="10" width="30" height="50"/>
+                                <rect key="frame" x="305" y="10" width="30" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="kI2-gw-Oca"/>
                                     <constraint firstAttribute="height" constant="50" id="qaF-ba-ovL"/>
@@ -815,7 +815,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cES-IW-yjP" userLabel="4" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="86" y="10" width="30" height="50"/>
+                                <rect key="frame" x="119" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SSV-f9-yuR"/>
@@ -834,7 +834,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ni0-o1-9eC" userLabel="7" customClass="NumberView" customModule="abacus" customModuleProvider="target">
-                                <rect key="frame" x="146" y="10" width="30" height="50"/>
+                                <rect key="frame" x="212" y="10" width="30" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AOF-rY-bXb"/>
@@ -858,7 +858,7 @@
                                     <constraint firstAttribute="width" constant="88" id="akP-VH-C1w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -868,13 +868,13 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="bmW-Hb-SVE" firstAttribute="leading" secondItem="LT5-CV-hHv" secondAttribute="trailing" constant="-10" id="1LA-ey-F9z" userLabel="1-space"/>
+                            <constraint firstItem="bmW-Hb-SVE" firstAttribute="leading" secondItem="LT5-CV-hHv" secondAttribute="trailing" constant="1" id="1LA-ey-F9z" userLabel="1-space"/>
                             <constraint firstItem="j1i-gg-0JJ" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="1pP-zV-dia"/>
                             <constraint firstItem="NfJ-gJ-pN6" firstAttribute="leading" secondItem="5lD-3e-x1b" secondAttribute="trailing" constant="5" id="1uC-MB-Ph9"/>
                             <constraint firstItem="E7n-XW-SMY" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="2Yx-Xn-pLc"/>
                             <constraint firstItem="5lD-3e-x1b" firstAttribute="width" secondItem="cES-IW-yjP" secondAttribute="width" id="9K0-zM-Vlz"/>
-                            <constraint firstItem="cES-IW-yjP" firstAttribute="leading" secondItem="Mcq-lN-egY" secondAttribute="trailing" constant="-10" id="B16-Ui-xpO" userLabel="3-space"/>
-                            <constraint firstItem="j1i-gg-0JJ" firstAttribute="leading" secondItem="cES-IW-yjP" secondAttribute="trailing" constant="-10" id="C1X-Tf-AlW" userLabel="4-space"/>
+                            <constraint firstItem="cES-IW-yjP" firstAttribute="leading" secondItem="Mcq-lN-egY" secondAttribute="trailing" constant="1" id="B16-Ui-xpO" userLabel="3-space"/>
+                            <constraint firstItem="j1i-gg-0JJ" firstAttribute="leading" secondItem="cES-IW-yjP" secondAttribute="trailing" constant="1" id="C1X-Tf-AlW" userLabel="4-space"/>
                             <constraint firstItem="ogx-H0-8ps" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="I1x-0k-K7n"/>
                             <constraint firstItem="5lD-3e-x1b" firstAttribute="width" secondItem="ni0-o1-9eC" secondAttribute="width" id="Iqz-XJ-1db"/>
                             <constraint firstItem="ni0-o1-9eC" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="Lyb-yf-hGS"/>
@@ -882,19 +882,19 @@
                             <constraint firstItem="LT5-CV-hHv" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="Rf7-il-uSF"/>
                             <constraint firstItem="5lD-3e-x1b" firstAttribute="width" secondItem="bmW-Hb-SVE" secondAttribute="width" id="UBh-m4-T8z"/>
                             <constraint firstItem="bmW-Hb-SVE" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="W8Z-Ez-Ys6"/>
-                            <constraint firstItem="E7n-XW-SMY" firstAttribute="leading" secondItem="ni0-o1-9eC" secondAttribute="trailing" constant="-10" id="W96-cf-Z4I" userLabel="7-space"/>
-                            <constraint firstItem="ogx-H0-8ps" firstAttribute="leading" secondItem="j1i-gg-0JJ" secondAttribute="trailing" constant="-10" id="WEl-pP-JxH" userLabel="5-space"/>
+                            <constraint firstItem="E7n-XW-SMY" firstAttribute="leading" secondItem="ni0-o1-9eC" secondAttribute="trailing" constant="1" id="W96-cf-Z4I" userLabel="7-space"/>
+                            <constraint firstItem="ogx-H0-8ps" firstAttribute="leading" secondItem="j1i-gg-0JJ" secondAttribute="trailing" constant="1" id="WEl-pP-JxH" userLabel="5-space"/>
                             <constraint firstAttribute="centerX" secondItem="NfJ-gJ-pN6" secondAttribute="centerX" id="Ync-mx-0vB"/>
                             <constraint firstItem="cES-IW-yjP" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="cCJ-1Z-iZT"/>
                             <constraint firstItem="rwv-Tn-eek" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="fwW-ru-ppG"/>
-                            <constraint firstItem="rwv-Tn-eek" firstAttribute="leading" secondItem="E7n-XW-SMY" secondAttribute="trailing" constant="-10" id="ghW-Nw-Q3h" userLabel="8-space"/>
-                            <constraint firstItem="5lD-3e-x1b" firstAttribute="leading" secondItem="rwv-Tn-eek" secondAttribute="trailing" constant="-10" id="iY8-Fy-fVq" userLabel="9-space"/>
+                            <constraint firstItem="rwv-Tn-eek" firstAttribute="leading" secondItem="E7n-XW-SMY" secondAttribute="trailing" constant="1" id="ghW-Nw-Q3h" userLabel="8-space"/>
+                            <constraint firstItem="5lD-3e-x1b" firstAttribute="leading" secondItem="rwv-Tn-eek" secondAttribute="trailing" constant="1" id="iY8-Fy-fVq" userLabel="9-space"/>
                             <constraint firstItem="5lD-3e-x1b" firstAttribute="top" secondItem="78L-vL-yfi" secondAttribute="bottom" constant="10" id="jQC-h8-3m7"/>
                             <constraint firstItem="LT5-CV-hHv" firstAttribute="leading" secondItem="uAf-SS-6SO" secondAttribute="leadingMargin" constant="10" id="lz3-l2-s1N" userLabel="0-space"/>
                             <constraint firstItem="NfJ-gJ-pN6" firstAttribute="top" secondItem="uAf-SS-6SO" secondAttribute="topMargin" constant="-61" id="qmn-bn-aWg"/>
                             <constraint firstAttribute="centerY" secondItem="NfJ-gJ-pN6" secondAttribute="centerY" id="ugG-Jd-ZgQ"/>
-                            <constraint firstItem="ni0-o1-9eC" firstAttribute="leading" secondItem="ogx-H0-8ps" secondAttribute="trailing" constant="-10" id="wPc-88-6ou" userLabel="6-space"/>
-                            <constraint firstItem="Mcq-lN-egY" firstAttribute="leading" secondItem="bmW-Hb-SVE" secondAttribute="trailing" constant="-10" id="xVA-st-g8u" userLabel="2-space"/>
+                            <constraint firstItem="ni0-o1-9eC" firstAttribute="leading" secondItem="ogx-H0-8ps" secondAttribute="trailing" constant="1" id="wPc-88-6ou" userLabel="6-space"/>
+                            <constraint firstItem="Mcq-lN-egY" firstAttribute="leading" secondItem="bmW-Hb-SVE" secondAttribute="trailing" constant="1" id="xVA-st-g8u" userLabel="2-space"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

@@ -4,7 +4,7 @@ class MainViewController: UIViewController {
     
     var digits: [ViewController?] = [nil,nil,nil,nil,nil,nil,nil]
     var expression : Expression = Digit(number: 0)
-
+    
     
     @IBOutlet weak var inputField: UILabel!
     
@@ -39,8 +39,24 @@ class MainViewController: UIViewController {
         setValue(expression.currentNumber)
     }
     
-    @IBAction func percentTapped(sender: UIButton) {
-        operationLabel.text = "%"
+    @IBAction func abacusTapped(sender: UIButton) {
+        operationLabel.text = "="
+        expression = expression.addEqualsSign()
+        inputField.text = expression.display()
+        isLidClose = !isLidClose
+        
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 2, options: nil, animations: {
+            self.calcViewTopSpace.constant = self.calcViewTopSpace.constant + self.view.bounds.height - self.inputField.bounds.height
+            self.view.layoutSubviews()
+            }, completion: {(success: Bool) in
+                dispatch_async(dispatch_get_main_queue(),{
+                    self.setValue(NSString(string: self.inputField.text! ).doubleValue)
+                    
+                    self.view.layoutSubviews()
+                })
+                
+                
+        })
     }
     
     @IBAction func clearTapped(sender: UIButton) {
@@ -71,7 +87,7 @@ class MainViewController: UIViewController {
         inputField.text = expression.display()
         setValue(expression.currentNumber)
     }
-
+    
     @IBAction func timesTapped(sender: UIButton) {
         operationLabel.text = "*"
         expression = expression.addSign(TimesSign())

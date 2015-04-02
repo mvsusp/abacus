@@ -10,23 +10,23 @@ import UIKit
 
 @IBDesignable
 class NumberView: UIView {
-
-  @IBInspectable var borderColor: UIColor = UIColor.blackColor() {
-    didSet {
-      layer.borderColor = borderColor.CGColor
+    
+    @IBInspectable var borderColor: UIColor = UIColor.blackColor() {
+        didSet {
+            layer.borderColor = borderColor.CGColor
+        }
     }
-  }
-  
-  @IBInspectable var borderWidth: CGFloat = 1.0 {
-    didSet {
-      layer.borderWidth = borderWidth
+    
+    @IBInspectable var borderWidth: CGFloat = 1.0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
     }
-  }
-  
-  @IBInspectable var cornerRadius: CGFloat = 3.0 {
-    didSet {
-      layer.cornerRadius = cornerRadius
+    
+    @IBInspectable var cornerRadius: CGFloat = 3.0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
     }
-  }
-  
+    
 }

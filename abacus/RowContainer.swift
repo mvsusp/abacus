@@ -9,6 +9,6 @@
 import UIKit
 
 class RowContainer: UIView {
-
-  @IBInspectable var digitIndex: Int = 0
+    
+    @IBInspectable var digitIndex: Int = 0
 }
