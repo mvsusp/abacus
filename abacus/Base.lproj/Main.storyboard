@@ -858,7 +858,7 @@
                                     <constraint firstAttribute="width" constant="88" id="akP-VH-C1w"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">

@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         originalSpacing = map(spaces, {(space:NSLayoutConstraint) in return space.constant})
         hiddenSpacing = map(spaces, {(space:NSLayoutConstraint) in return space.constant + self.view.bounds.width})
-        //        eraseBoard()
+        eraseBoard()
     }
     
     @IBAction func viewTapped(sender: UITapGestureRecognizer) {
@@ -64,20 +64,21 @@ class ViewController: UIViewController {
     
     
     func setCurrentNumber(value: Int, alert: Bool){
+        var absValue = abs(value)
         if alert {
             delegate?.numberChanged()
         }
-        currentNumberLabel.text = "\(value)"
+        currentNumberLabel.text = "\(absValue)"
         
         for index in 1...10 {
-            if index <= value {
+            if index <= absValue {
                 showNumber(index)
             } else {
                 hideNumber(index)
             }
         }
         
-        currentNumber = value
+        currentNumber = absValue
     }
     
     func eraseBoard(){
