@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815EB1A61ACD708F00A21AE1 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815EB1A51ACD708F00A21AE1 /* Expression.swift */; };
 		818C4FA71AC8702E002BEEB9 /* RowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C4FA61AC8702E002BEEB9 /* RowContainer.swift */; };
 		81F6E3531AC7067D0075F0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3521AC7067D0075F0D1 /* AppDelegate.swift */; };
 		81F6E3551AC7067D0075F0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6E3541AC7067D0075F0D1 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		815EB1A51ACD708F00A21AE1 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 		818C4FA61AC8702E002BEEB9 /* RowContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowContainer.swift; sourceTree = "<group>"; };
 		81F6E34D1AC7067D0075F0D1 /* abacus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = abacus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F6E3511AC7067D0075F0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				81F6E3741AC757AC0075F0D1 /* NumberRowView.swift */,
 				81F6E3781AC778500075F0D1 /* MainViewController.swift */,
 				818C4FA61AC8702E002BEEB9 /* RowContainer.swift */,
+				815EB1A51ACD708F00A21AE1 /* Expression.swift */,
 			);
 			path = abacus;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				81F6E3751AC757AC0075F0D1 /* NumberRowView.swift in Sources */,
 				81F6E3731AC70EF20075F0D1 /* NumberView.swift in Sources */,
 				818C4FA71AC8702E002BEEB9 /* RowContainer.swift in Sources */,
+				815EB1A61ACD708F00A21AE1 /* Expression.swift in Sources */,
 				81F6E3791AC778500075F0D1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
